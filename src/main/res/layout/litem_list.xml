@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingRight="10sp"
+    android:background="#575252"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#555151"
+        android:orientation="horizontal">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:paddingTop="7dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/imge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:sriv_border_color="#FFCC00"
+        app:sriv_border_width="2dp"
+        app:sriv_oval="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/id"
+        android:textColor="#F1E7E7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id"
+
+        android:textStyle="bold|italic"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:textStyle="bold|italic"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textColor="#F1E7E7"
+        android:paddingLeft="15dp"
+        android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/delete"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+      android:visibility="gone"
+            android:onClick="Delete"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete"
+            app:sriv_border_color="#FFCC00"
+            app:sriv_border_width="2dp"
+            app:sriv_oval="true" />
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+        android:visibility="invisible"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:onClick="Edit"
+            android:scaleType="fitCenter"
+            android:src="@drawable/esitf"
+           />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
